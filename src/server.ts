@@ -6,4 +6,6 @@ app.get('/', (request, response) => {
   return response.json({ message: 'Server running, get route' });
 });
 
-app.listen(3333);
+app.listen(3333, () => {
+  console.log('🚀️ Server started on port 3333!');
+});
